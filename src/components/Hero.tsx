@@ -45,49 +45,78 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen bg-[#1F2223] flex items-center justify-center relative overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="max-w-7xl mx-auto">
-          {/* Content */}
-          <div className="text-center">
-            <div className="mb-8">
-              <div className="flex items-center justify-center mb-8">
-                <img 
-                  src="/lovable-uploads/f8926b78-9e63-49c5-ad8b-2d0a25d0a7e9.png" 
-                  alt="Bento" 
-                  className="w-8 h-8 rounded-lg mr-3"
-                />
-                <span className="text-white text-xl font-semibold">Bento</span>
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Bento Finance
-              </h1>
-              <p className="text-lg text-gray-300 mb-12 max-w-lg mx-auto leading-relaxed">
-                Works out of the box with automated categorization and intuitive design. Ask anything based on real data
+    <section className="min-h-screen bg-[#111111] flex flex-col">
+      {/* Main Hero Content */}
+      <div className="flex-1 flex items-center justify-center">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Logo */}
+            <div className="flex items-center justify-center mb-12">
+              <img 
+                src="/lovable-uploads/f8926b78-9e63-49c5-ad8b-2d0a25d0a7e9.png" 
+                alt="Bento" 
+                className="w-8 h-8 rounded-lg mr-3"
+              />
+              <span className="text-white text-xl font-semibold">Bento</span>
+            </div>
+
+            {/* Title */}
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+              Bento Finance
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-xl text-gray-400 mb-16 max-w-2xl mx-auto leading-relaxed">
+              Works out of the box with automated categorization and intuitive design. Ask anything based on real data.
+            </p>
+            
+            {/* Email Form */}
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto justify-center">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="flex-1 px-6 py-4 text-base rounded-full border-0 bg-gray-800 text-white placeholder-gray-500 focus:bg-gray-700 focus:ring-2 focus:ring-white/20 h-12"
+                required
+              />
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="bg-white text-black hover:bg-gray-200 px-8 py-4 text-base rounded-full font-semibold transition-all duration-200 disabled:opacity-50 whitespace-nowrap h-12"
+              >
+                {isSubmitting ? "Joining..." : "Join Waitlist"}
+              </Button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      {/* Feature Cards */}
+      <div className="container mx-auto px-6 pb-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Smart Categorization */}
+            <div className="bg-gray-900 rounded-2xl p-8 text-center">
+              <h3 className="text-xl font-semibold text-white mb-4">Smart Categorization</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Designed to make sense quickly — and keep delivering.
               </p>
             </div>
-            
-            <div className="mb-8">
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-6">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 px-6 py-3 text-base rounded-full border-0 bg-gray-700 text-white placeholder-gray-400 focus:bg-gray-600 focus:ring-2 focus:ring-white/20"
-                  required
-                />
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="bg-white text-black hover:bg-gray-100 px-8 py-3 text-base rounded-full font-semibold transition-all duration-200 disabled:opacity-50 whitespace-nowrap"
-                >
-                  {isSubmitting ? "Joining..." : "Join Waitlist"}
-                </Button>
-              </form>
 
-              <p className="text-sm text-gray-400 mb-8">
-                Coming soon to iOS App Store
+            {/* Ask Anything */}
+            <div className="bg-gray-900 rounded-2xl p-8 text-center">
+              <h3 className="text-xl font-semibold text-white mb-4">Ask Anything</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Grounded in real data and logic, not speculation.
+              </p>
+            </div>
+
+            {/* Widget-Based Dashboards */}
+            <div className="bg-gray-900 rounded-2xl p-8 text-center">
+              <h3 className="text-xl font-semibold text-white mb-4">Widget-Based Dashboards</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Build your dashboard like a bento box with only what you need.
               </p>
             </div>
           </div>
