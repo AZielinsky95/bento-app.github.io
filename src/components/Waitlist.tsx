@@ -14,19 +14,38 @@ const Waitlist = () => {
 
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
+    // TODO: Replace with actual Mailchimp integration
+    // You'll need to provide your Mailchimp API key and audience ID
+    try {
+      // Placeholder for Mailchimp API call
+      // const response = await fetch('/api/mailchimp', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify({ email })
+      // });
+      
+      // Simulate API call for now
+      setTimeout(() => {
+        toast({
+          title: "You're on the waitlist!",
+          description: "We'll notify you when Bento is available on the App Store.",
+        });
+        setEmail("");
+        setIsSubmitting(false);
+      }, 1000);
+    } catch (error) {
+      console.error('Error subscribing to waitlist:', error);
       toast({
-        title: "You're on the waitlist!",
-        description: "We'll notify you when Bento is available on the App Store.",
+        title: "Error",
+        description: "Failed to join waitlist. Please try again.",
+        variant: "destructive",
       });
-      setEmail("");
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
-    <section id="waitlist" className="py-20 bg-gradient-to-br from-blue-600 to-indigo-700">
+    <section id="waitlist" className="py-20 bg-gradient-to-br from-[#0D155D] to-gray-900">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-4xl font-bold text-white mb-4">
@@ -42,13 +61,13 @@ const Waitlist = () => {
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 px-4 py-3 rounded-full border-0 bg-white/90 backdrop-blur-sm text-gray-900 placeholder-gray-500"
+              className="flex-1 px-4 py-3 rounded-full border-0 bg-white/10 backdrop-blur-sm text-white placeholder-gray-300 focus:bg-white/20"
               required
             />
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="bg-white text-blue-600 hover:bg-gray-50 px-8 py-3 rounded-full font-semibold transition-all duration-200 disabled:opacity-50"
+              className="bg-white text-[#0D155D] hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition-all duration-200 disabled:opacity-50"
             >
               {isSubmitting ? "Joining..." : "Join Waitlist"}
             </Button>
