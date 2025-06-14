@@ -1,16 +1,10 @@
-
 const Footer = () => {
   return (
     <footer className="text-white py-12" style={{ backgroundColor: '#1F2223' }}>
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center space-x-3 mb-4 md:mb-0">
-            <img 
-              src="/lovable-uploads/f8926b78-9e63-49c5-ad8b-2d0a25d0a7e9.png" 
-              alt="Bento" 
-              className="w-8 h-8 rounded-lg"
-            />
-            <span className="text-xl font-semibold">Bento</span>
+          <div className="mb-4 md:mb-0">
+            {/* Removed logo and Bento text */}
           </div>
           
           <div className="text-center md:text-right">
