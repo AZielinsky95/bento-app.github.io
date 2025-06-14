@@ -21,7 +21,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-20" style={{ backgroundColor: '#1F2223' }}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">
