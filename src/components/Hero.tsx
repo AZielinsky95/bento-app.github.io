@@ -61,16 +61,19 @@ const Hero = () => {
 
           {/* Title */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-16 leading-tight max-w-3xl mx-auto">
-            Your <img 
-              src="/lovable-uploads/3ae8efa3-758c-4fe8-9674-1cf074892ac7.png" 
-              alt="star" 
-              className="inline w-6 h-6 md:w-8 md:h-8 mx-1 mb-1" 
+            Your <span 
+              className="inline-block w-6 h-6 md:w-8 md:h-8 mx-1 mb-1 bg-gradient-to-r from-[#5C68D1] to-[#6E7CF7] rounded-sm"
               style={{
-                maskImage: 'linear-gradient(to right, #5C68D1, #6E7CF7)',
-                WebkitMaskImage: 'linear-gradient(to right, #5C68D1, #6E7CF7)',
-                backgroundColor: 'white'
-              }} 
-            /> <span 
+                maskImage: `url('/lovable-uploads/3ae8efa3-758c-4fe8-9674-1cf074892ac7.png')`,
+                WebkitMaskImage: `url('/lovable-uploads/3ae8efa3-758c-4fe8-9674-1cf074892ac7.png')`,
+                maskSize: 'contain',
+                WebkitMaskSize: 'contain',
+                maskRepeat: 'no-repeat',
+                WebkitMaskRepeat: 'no-repeat',
+                maskPosition: 'center',
+                WebkitMaskPosition: 'center'
+              }}
+            ></span> <span 
               className="bg-gradient-to-r from-[#5C68D1] to-[#6E7CF7] bg-clip-text text-transparent"
             >AI</span> <span 
               className="bg-gradient-to-r from-[#5C68D1] to-[#6E7CF7] bg-clip-text text-transparent"
