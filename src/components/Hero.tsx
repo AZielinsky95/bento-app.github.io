@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
-import { Sparkle, Zap, Shield, Settings } from "lucide-react";
+import { Zap, Shield, Settings } from "lucide-react";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -61,7 +61,7 @@ const Hero = () => {
 
           {/* Title */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-16 leading-tight max-w-3xl mx-auto">
-            Your <Sparkle className="inline w-6 h-6 md:w-8 md:h-8 mx-1 mb-1 text-blue-400" /> <span className="font-bold text-blue-400">AI</span> powered financial assistant is coming soon.
+            Your <img src="/lovable-uploads/3ae8efa3-758c-4fe8-9674-1cf074892ac7.png" alt="star" className="inline w-6 h-6 md:w-8 md:h-8 mx-1 mb-1" style={{filter: 'brightness(0) saturate(100%) invert(45%) sepia(93%) saturate(2174%) hue-rotate(234deg) brightness(96%) contrast(88%)'}} /> <span className="font-bold text-blue-400">AI</span> powered financial assistant is coming soon.
           </h1>
           
           {/* Email Form */}
