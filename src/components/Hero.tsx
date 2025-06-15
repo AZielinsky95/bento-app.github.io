@@ -45,71 +45,9 @@ const Hero = () => {
     }
   };
 
-  // Generate random heights for the bar chart pattern
-  const generateBars = () => {
-    const bars = [];
-    const numBars = 50;
-    
-    for (let i = 0; i < numBars; i++) {
-      const height = Math.random() * 60 + 20; // Random height between 20% and 80%
-      const delay = Math.random() * 2; // Random animation delay
-      
-      bars.push(
-        <div
-          key={i}
-          className="absolute bottom-0 w-4 opacity-20"
-          style={{
-            left: `${(i / numBars) * 100}%`,
-            height: `${height}%`,
-            background: `linear-gradient(180deg, 
-              #1a1a1a 0%, 
-              #141414 30%, 
-              #0f0f0f 70%, 
-              #111111 100%)`,
-            filter: 'url(#noise)',
-            animationDelay: `${delay}s`,
-          }}
-        />
-      );
-    }
-    return bars;
-  };
-
   return (
-    <section className="min-h-screen bg-[#111111] flex flex-col items-center justify-center relative overflow-hidden">
-      {/* SVG Filter for noise effect */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }}>
-        <defs>
-          <filter id="noise">
-            <feTurbulence 
-              baseFrequency="0.9" 
-              numOctaves="1" 
-              result="noise"
-              type="fractalNoise"
-            />
-            <feColorMatrix 
-              in="noise" 
-              type="saturate" 
-              values="0"
-            />
-            <feComponentTransfer result="monoNoise">
-              <feFuncA type="discrete" tableValues="0.1 0.05 0.15 0.08 0.12"/>
-            </feComponentTransfer>
-            <feBlend 
-              in="SourceGraphic" 
-              in2="monoNoise" 
-              mode="multiply"
-            />
-          </filter>
-        </defs>
-      </svg>
-
-      {/* Background bar chart pattern */}
-      <div className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }}>
-        {generateBars()}
-      </div>
-
-      <div className="container mx-auto px-6 relative" style={{ zIndex: 2 }}>
+    <section className="min-h-screen bg-[#111111] flex flex-col items-center justify-center">
+      <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
           <div className="flex items-center justify-center mb-16">
@@ -184,7 +122,7 @@ const Hero = () => {
       </div>
 
       {/* Footer */}
-      <div className="mt-20 text-center relative" style={{ zIndex: 2 }}>
+      <div className="mt-20 text-center">
         <p className="text-gray-500 text-xs">
           © 2025 AZIQ Labs. All rights reserved.
         </p>
