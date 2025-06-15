@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
+import { Sparkle } from "lucide-react";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -53,7 +54,7 @@ const Hero = () => {
             {/* Logo */}
             <div className="flex items-center justify-center mb-12">
               <img 
-                src="/lovable-uploads/f8926b78-9e63-49c5-ad8b-2d0a25d0a7e9.png" 
+                src="/lovable-uploads/103b3f9e-3958-45e1-9be2-7845e0a8be77.png" 
                 alt="Bento" 
                 className="w-8 h-8 rounded-lg mr-3"
               />
@@ -62,7 +63,7 @@ const Hero = () => {
 
             {/* Title */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
-              Bento Finance
+              Your <Sparkle className="inline w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 mx-2 mb-2" /> <span className="font-bold">AI</span> powered financial assistant is coming soon.
             </h1>
 
             {/* Subtitle */}
