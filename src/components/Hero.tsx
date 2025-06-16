@@ -44,7 +44,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
           <div className="flex items-center justify-center mb-16">
-            <img src="/lovable-uploads/103b3f9e-3958-45e1-9be2-7845e0a8be77.png" alt="Bento" className="w-12 h-12 rounded-lg mr-4" />
+            <img src="/lovable-uploads/103b3f9e-3958-45e1-9be2-7845e0a8be77.png" alt="Bento" className="w-14 h-14 rounded-lg mr-4" />
             <span className="text-white font-bold text-5xl">Bento</span>
           </div>
 
