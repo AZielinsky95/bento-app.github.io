@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -44,7 +45,7 @@ const Hero = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
-          <div className="flex items-center justify-center mb-16 pt-[32] py-[50px]">
+          <div className="flex items-center justify-center mb-8 pt-16 md:pt-8">
             <img src="/lovable-uploads/103b3f9e-3958-45e1-9be2-7845e0a8be77.png" alt="Bento" className="w-16 h-16 rounded-lg mr-4" />
             <span className="text-white font-bold text-6xl">Bento</span>
           </div>
@@ -88,7 +89,7 @@ const Hero = () => {
                 <span className="text-2xl mr-2">🔒</span>
                 <h3 className="text-lg font-semibold text-white">Secure</h3>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed">We use read-only access through trusted providers like Plaid. Your data stays yours.</p>
+              <p className="text-gray-400 text-sm leading-relaxed">We use read-only access through trusted providers like Plaid. Your data stays yours.</p>
             </div>
 
             {/* Modular */}
