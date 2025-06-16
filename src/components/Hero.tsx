@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
+
 const Hero = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -44,8 +45,8 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
           <div className="flex items-center justify-center mb-16 pt-[32] py-[50px]">
-            <img src="/lovable-uploads/103b3f9e-3958-45e1-9be2-7845e0a8be77.png" alt="Bento" className="w-14 h-14 rounded-lg mr-4" />
-            <span className="text-white font-bold text-5xl">Bento</span>
+            <img src="/lovable-uploads/103b3f9e-3958-45e1-9be2-7845e0a8be77.png" alt="Bento" className="w-16 h-16 rounded-lg mr-4" />
+            <span className="text-white font-bold text-6xl">Bento</span>
           </div>
 
           {/* Title */}
@@ -59,7 +60,7 @@ const Hero = () => {
             WebkitMaskRepeat: 'no-repeat',
             maskPosition: 'center',
             WebkitMaskPosition: 'center'
-          }}></span> <span className="bg-gradient-to-r from-[#5C68D1] to-[#6E7CF7] bg-clip-text text-transparent">AI</span> <span className="bg-gradient-to-r from-[#5C68D1] to-[#6E7CF7] bg-clip-text text-transparent">powered</span> financial assistant is coming soon.
+          }}></span> <span className="bg-gradient-to-r from-[#5C68D1] to-[#6E7CF7] bg-clip-text text-transparent">AI</span> <span className="bg-gradient-to-r from-[#5C68D1] to-[#6E7CF7] bg-clip-text text-transparent">powered</span> financial assistant is coming soon to iOS.
           </h1>
           
           {/* Email Form */}
@@ -103,4 +104,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
