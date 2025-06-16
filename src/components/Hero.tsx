@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
-import { Zap, Shield, Settings } from "lucide-react";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -54,9 +53,9 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/103b3f9e-3958-45e1-9be2-7845e0a8be77.png" 
               alt="Bento" 
-              className="w-10 h-10 rounded-lg mr-3"
+              className="w-12 h-12 rounded-lg mr-4"
             />
-            <span className="text-white text-2xl font-bold">Bento</span>
+            <span className="text-white text-3xl font-bold">Bento</span>
           </div>
 
           {/* Title */}
@@ -104,7 +103,7 @@ const Hero = () => {
             {/* Intelligent */}
             <div className="bg-gray-800/50 rounded-2xl p-8 text-left border border-gray-700">
               <div className="flex items-center mb-4">
-                <Zap className="w-5 h-5 text-yellow-400 mr-2" />
+                <span className="text-2xl mr-2">✨</span>
                 <h3 className="text-lg font-semibold text-white">Intelligent</h3>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
@@ -115,7 +114,7 @@ const Hero = () => {
             {/* Secure */}
             <div className="bg-gray-800/50 rounded-2xl p-8 text-left border border-gray-700">
               <div className="flex items-center mb-4">
-                <Shield className="w-5 h-5 text-green-400 mr-2" />
+                <span className="text-2xl mr-2">🔒</span>
                 <h3 className="text-lg font-semibold text-white">Secure</h3>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
@@ -126,7 +125,7 @@ const Hero = () => {
             {/* Modular */}
             <div className="bg-gray-800/50 rounded-2xl p-8 text-left border border-gray-700">
               <div className="flex items-center mb-4">
-                <Settings className="w-5 h-5 text-blue-400 mr-2" />
+                <span className="text-2xl mr-2">🧩</span>
                 <h3 className="text-lg font-semibold text-white">Modular</h3>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
@@ -135,13 +134,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Footer */}
-      <div className="mt-20 text-center">
-        <p className="text-gray-500 text-xs">
-          © 2025 AZIQ Labs. All rights reserved.
-        </p>
       </div>
     </section>
   );
