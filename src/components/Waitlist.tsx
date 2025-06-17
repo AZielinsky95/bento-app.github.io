@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -23,6 +22,30 @@ const Waitlist = () => {
       //   headers: { 'Content-Type': 'application/json' },
       //   body: JSON.stringify({ email })
       // });
+
+      // Submit to Mailchimp via hidden iframe
+      const iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      document.body.appendChild(iframe);
+      
+      const form = document.createElement('form');
+      form.method = 'POST';
+      form.action = 'https://us20.list-manage.com/subscribe/post?u=393d8b0631abc4754e2a34c51&id=b983b2d8d9';
+      form.target = iframe.name;
+      
+      const emailInput = document.createElement('input');
+      emailInput.type = 'email';
+      emailInput.name = 'EMAIL';
+      emailInput.value = email;
+      form.appendChild(emailInput);
+      
+      iframe.contentDocument?.body.appendChild(form);
+      form.submit();
+      
+      // Clean up
+      setTimeout(() => {
+        document.body.removeChild(iframe);
+      }, 1000);
       
       // Simulate API call for now
       setTimeout(() => {
