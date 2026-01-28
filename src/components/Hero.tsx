@@ -67,10 +67,8 @@ const Hero = () => {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 leading-tight">
-          The most <span className="text-[#5C68D1] font-bold">powerful</span> way
-          <br />
-          to track your <span className="text-[#5C68D1] font-bold">finances</span>
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 leading-tight">
+          The most <span className="text-[#5C68D1] font-bold">powerful</span> way to track your <span className="text-[#5C68D1] font-bold">finances</span>
         </h1>
 
         {/* Subheadline */}
@@ -101,11 +99,11 @@ const Hero = () => {
         </form>
 
         {/* Hero Phone Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center -mx-6 md:mx-0">
           <img
             src="/images/handphone.png"
             alt="Bento App Dashboard"
-            className="w-full max-w-[500px] md:max-w-3xl lg:max-w-4xl object-contain"
+            className="w-[120%] max-w-[600px] md:max-w-3xl lg:max-w-4xl object-contain"
           />
         </div>
       </div>
