@@ -1,54 +1,127 @@
-
-import { Check, Calendar, User } from "lucide-react";
-
 const Features = () => {
-  const features = [
-    {
-      icon: Check,
-      title: "AI-Powered Insights",
-      description: "Get personalized financial recommendations based on your spending patterns and goals."
-    },
-    {
-      icon: Calendar,
-      title: "Automated Budgeting",
-      description: "Let AI create and adjust your budget automatically as your income and expenses change."
-    },
-    {
-      icon: User,
-      title: "Smart Notifications",
-      description: "Receive timely alerts about bill payments, unusual spending, and savings opportunities."
-    }
-  ];
-
   return (
-    <section className="py-20" style={{ backgroundColor: '#1F2223' }}>
-      <div className="container mx-auto px-6">
+    <section className="py-16 px-6 bg-white">
+      <div className="container mx-auto max-w-6xl">
+        {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Why Choose Bento?
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Everything you need to
+            <br />
+            manage your money.
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Experience the future of personal finance management with our intelligent features.
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Powerful features designed to make managing your finances effortless
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="text-center p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-[#0D155D] transition-all duration-200 hover:shadow-lg hover:shadow-[#0D155D]/20"
-            >
-              <div className="w-16 h-16 bg-[#0D155D]/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <feature.icon className="w-8 h-8 text-[#0D155D]" />
+        {/* Feature Cards */}
+        <div className="space-y-6">
+          {/* Feature 1: Fully Customizable Experience */}
+          <div className="bg-[#F5F5F5] rounded-3xl pt-6 md:pt-8 px-6 md:px-10 pb-0 overflow-hidden">
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="w-full md:w-1/2 flex items-end justify-center">
+                <img
+                  src="/images/device1.png"
+                  alt="Customizable Dashboard"
+                  className="w-full max-w-sm mx-auto"
+                />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-4">
-                {feature.title}
-              </h3>
-              <p className="text-gray-300 leading-relaxed">
-                {feature.description}
-              </p>
+              <div className="w-full md:w-1/2 text-center md:text-left py-6 md:pt-8 md:pb-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  A Fully Customizable Experience
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Build Bento around how you think about money. {" "}
+                  <span className="font-semibold">Compose personalized dashboards</span> with a flexible {" "}
+                  <span className="font-semibold">widget</span> system tailored to your needs.
+                </p>
+              </div>
             </div>
-          ))}
+          </div>
+
+          {/* Feature 2: Track Budgets, Tags, and More */}
+          <div className="bg-[#F5F5F5] rounded-3xl pt-6 md:pt-8 px-6 md:px-10 pb-0 overflow-hidden">
+            <div className="flex flex-col md:flex-row-reverse gap-6">
+              <div className="w-full md:w-1/2 flex items-end justify-center">
+                <img
+                  src="/images/widgetspread.png"
+                  alt="Budget Tracking"
+                  className="w-full max-w-md mx-auto"
+                />
+              </div>
+              <div className="w-full md:w-1/2 text-center md:text-left py-6 md:pt-8 md:pb-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  Choose What You Track
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Set budgets, tag transactions, and track recurring expenses—all in one place. Finally, a clear picture of where your money goes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Feature 3: Talk Directly to Your Finances */}
+          <div className="bg-[#F5F5F5] rounded-3xl pt-6 md:pt-8 px-6 md:px-10 pb-0 overflow-hidden">
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="w-full md:w-1/2 flex items-end">
+                <img
+                  src="/images/device2.png"
+                  alt="AI Assistant"
+                  className="w-full max-w-md mx-auto"
+                />
+              </div>
+              <div className="w-full md:w-1/2 text-center md:text-left py-6 md:pt-8 md:pb-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  Talk Directly to Your Finances
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Tired of spreadsheets? Meet Benii, the most capable financial agent available. Benii can provide deep insights into your spending, as well as <span className="font-semibold">tag, re-categorize, and analyze</span> your transactions automatically.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Feature 4: All Your Accounts in One Place */}
+          {/* <div className="bg-[#F5F5F5] rounded-3xl pt-6 md:pt-8 px-6 md:px-10 pb-0 overflow-hidden">
+            <div className="flex flex-col md:flex-row-reverse gap-6">
+              <div className="w-full md:w-1/2 flex items-end justify-center">
+                <img
+                  src="/images/device3.png"
+                  alt="All Accounts View"
+                  className="w-full max-w-md mx-auto"
+                />
+              </div>
+              <div className="w-full md:w-1/2 text-center md:text-left py-6 md:pt-8 md:pb-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  All Your Accounts in One Place
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  A unified view of your financial accounts, with powerful grouping and visualization built directly into your dashboard.
+                </p>
+              </div>
+            </div>
+          </div> */}
+
+          {/* Feature 5: Bank-Level Security */}
+          <div className="bg-[#F5F5F5] rounded-3xl py-6 md:py-10 px-6 md:px-10">
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="w-full md:w-1/2 flex justify-center items-center">
+                <img
+                  src="/images/banklvlsecurity.svg"
+                  alt="Bank Level Security"
+                  className="w-full max-w-sm"
+                />
+              </div>
+              <div className="w-full md:w-1/2 text-center md:text-left py-6 md:pt-8 md:pb-0">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  Bank-Level Security
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Your data stays yours. <span className="font-semibold">Read-only access</span>, <span className="font-semibold">AES-256 encryption</span>, and a strict policy: we <span className="font-semibold">never sell your data</span>. Ever.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
