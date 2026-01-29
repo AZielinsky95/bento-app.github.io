@@ -55,7 +55,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen bg-white flex flex-col items-center pt-24 md:pt-[200px] pb-8 px-6">
+    <section className="min-h-screen bg-white flex flex-col items-center pt-12 md:pt-[200px] pb-8 px-4 md:px-6 overflow-hidden">
       <div className="container mx-auto max-w-4xl text-center">
         {/* Logo */}
         <div className="flex items-center justify-center mb-8">

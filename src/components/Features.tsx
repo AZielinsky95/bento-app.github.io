@@ -40,16 +40,16 @@ const Features = () => {
           </div>
 
           {/* Feature 2: Track Budgets, Tags, and More */}
-          <div className="bg-[#F5F5F5] rounded-3xl pt-5 md:pt-8 px-6 md:px-10 pb-0 overflow-hidden">
+          <div className="bg-[#F5F5F5] rounded-3xl py-5 md:py-10 px-6 md:px-10">
             <div className="flex flex-col-reverse md:flex-row-reverse gap-4 md:gap-6">
-              <div className="w-full md:w-1/2 flex items-end justify-center">
+              <div className="w-full md:w-1/2 flex items-center justify-center">
                 <img
                   src="/images/widgetspread.png"
                   alt="Budget Tracking"
                   className="w-full max-w-md mx-auto"
                 />
               </div>
-              <div className="w-full md:w-1/2 text-left pt-0 md:pt-8 md:pb-10">
+              <div className="w-full md:w-1/2 text-left pt-0 md:pt-8 md:pb-0">
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                   Choose What You Track
                 </h3>
@@ -75,7 +75,7 @@ const Features = () => {
                   Talk Directly to Your Finances
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                  Tired of spreadsheets? Meet Benii, the most capable financial agent available. Benii can provide deep insights into your spending, as well as <span className="font-semibold">tag, re-categorize, and analyze</span> your transactions automatically.
+                  Tired of spreadsheets? Meet Benii. Benii delivers deep insights into your spending and automatically <span className="font-semibold">tags, recategorizes, and analyzes</span> your transactions.
                 </p>
               </div>
             </div>
