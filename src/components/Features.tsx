@@ -82,8 +82,8 @@ const Features = () => {
           </div>
 
           {/* Feature 4: All Your Accounts in One Place */}
-          {/* <div className="bg-[#F5F5F5] rounded-3xl pt-6 md:pt-8 px-6 md:px-10 pb-0 overflow-hidden">
-            <div className="flex flex-col md:flex-row-reverse gap-6">
+          <div className="bg-[#F5F5F5] rounded-3xl pt-5 md:pt-8 px-6 md:px-10 pb-0 overflow-hidden">
+            <div className="flex flex-col-reverse md:flex-row-reverse gap-4 md:gap-6">
               <div className="w-full md:w-1/2 flex items-end justify-center">
                 <img
                   src="/images/device3.png"
@@ -91,16 +91,16 @@ const Features = () => {
                   className="w-full max-w-md mx-auto"
                 />
               </div>
-              <div className="w-full md:w-1/2 text-center md:text-left py-6 md:pt-8 md:pb-10">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              <div className="w-full md:w-1/2 text-left pt-0 md:pt-8 md:pb-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                   All Your Accounts in One Place
                 </h3>
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                   A unified view of your financial accounts, with powerful grouping and visualization built directly into your dashboard.
                 </p>
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* Feature 5: Bank-Level Security */}
           <div className="bg-[#F5F5F5] rounded-3xl py-5 md:py-10 px-6 md:px-10">
