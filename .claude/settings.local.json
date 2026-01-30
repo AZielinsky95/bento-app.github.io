@@ -4,7 +4,9 @@
       "Bash(find:*)",
       "Bash(npm run build:*)",
       "Bash(npx vite build:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(convert:*)",
+      "Bash(magick:*)"
     ],
     "deny": [],
     "ask": []

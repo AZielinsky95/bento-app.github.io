@@ -55,7 +55,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen bg-white flex flex-col items-center pt-12 md:pt-[200px] pb-8 px-4 md:px-6 overflow-hidden">
+    <section className="min-h-screen bg-white flex flex-col items-center pt-12 md:pt-[140px] pb-8 px-4 md:px-6 overflow-hidden">
       <div className="container mx-auto max-w-4xl text-center">
         {/* Logo */}
         <div className="flex items-center justify-center mb-8">
@@ -103,7 +103,7 @@ const Hero = () => {
           <img
             src="/images/handphone.png"
             alt="Bento App Dashboard"
-            className="w-[120%] max-w-[600px] md:max-w-3xl lg:max-w-4xl object-contain"
+            className="w-[140%] max-w-[700px] md:max-w-3xl lg:max-w-4xl object-contain"
           />
         </div>
       </div>
