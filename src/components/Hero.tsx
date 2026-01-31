@@ -103,7 +103,7 @@ const Hero = () => {
           <img
             src="/images/handphone.png"
             alt="Bento App Dashboard"
-            className="w-[140%] max-w-[700px] md:max-w-3xl lg:max-w-4xl object-contain"
+            className="w-[160%] max-w-[800px] md:max-w-3xl lg:max-w-4xl object-contain"
           />
         </div>
       </div>
