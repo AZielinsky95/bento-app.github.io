@@ -23,6 +23,20 @@
     <meta name="twitter:description" content="Your AI-powered financial assistant is coming soon to iOS. Join the waitlist for early access to the smartest budgeting app ever created." />
     <meta name="twitter:image" content="/images/bentoicon.png" />
 
+    <!-- SPA redirect handler for GitHub Pages 404 -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+
     <!-- Preload critical images -->
     <link rel="preload" href="/images/bentologo.svg" as="image" type="image/svg+xml" />
     <link rel="preload" href="/images/handphone.png" as="image" type="image/png" />
