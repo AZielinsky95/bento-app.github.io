@@ -1,22 +1,12 @@
-import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 
 const Privacy = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4">
-          <Link to="/" className="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors">
-            ← Bento
-          </Link>
-        </div>
-      </header>
-
       {/* Privacy Policy Content */}
       <main className="container mx-auto px-6 py-8 max-w-4xl">
         <article className="prose prose-sm prose-gray max-w-none prose-headings:text-gray-900 prose-headings:mt-3 prose-headings:mb-1 prose-h2:mt-5 prose-h3:mt-3 prose-p:text-gray-700 prose-p:my-1 prose-li:text-gray-700 prose-li:my-0 prose-ul:my-1 prose-strong:text-gray-900 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:text-left prose-th:font-semibold prose-th:text-gray-900 prose-td:text-gray-700">
-          <h1 className="text-3xl font-bold mb-1">Bento Privacy Policy</h1>
+          <h1 className="text-3xl font-bold mb-1">Privacy Policy</h1>
           <p className="text-gray-500 text-sm mb-6">
             <strong>Effective Date:</strong> April 20, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> April 20, 2026
           </p>
