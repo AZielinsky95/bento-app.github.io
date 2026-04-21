@@ -117,7 +117,7 @@ const Features = () => {
                   Bank-Level Security
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                  Your data stays yours. <span className="font-semibold">Read-only access</span>, <span className="font-semibold">AES-256 encryption</span>, and a strict policy: we <span className="font-semibold">never sell your data</span>. Ever.
+                  Bento uses read-only access and protects sensitive data using industry-standard security controls, including encryption and strict access protections. We do not sell your data.
                 </p>
               </div>
             </div>
