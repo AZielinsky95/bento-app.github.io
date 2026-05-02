@@ -8,7 +8,7 @@ const Privacy = () => {
         <article className="prose prose-sm prose-gray max-w-none prose-headings:text-gray-900 prose-headings:mt-3 prose-headings:mb-1 prose-h2:mt-5 prose-h3:mt-3 prose-p:text-gray-700 prose-p:my-1 prose-li:text-gray-700 prose-li:my-0 prose-ul:my-1 prose-strong:text-gray-900 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:text-left prose-th:font-semibold prose-th:text-gray-900 prose-td:text-gray-700">
           <h1 className="text-3xl font-bold mb-1">Privacy Policy</h1>
           <p className="text-gray-500 text-sm mb-6">
-            <strong>Effective Date:</strong> April 20, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> April 20, 2026
+            <strong>Effective Date:</strong> May 2, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> May 2, 2026
           </p>
 
           <p>
@@ -41,11 +41,10 @@ const Privacy = () => {
               <li><a href="#16-internal-access-to-user-data">Internal Access to User Data</a></li>
               <li><a href="#17-your-choices-and-rights">Your Choices and Rights</a></li>
               <li><a href="#18-additional-rights-for-california-residents">Additional Rights for California Residents (CCPA/CPRA)</a></li>
-              <li><a href="#19-additional-rights-for-quebec-residents">Additional Rights for Quebec Residents</a></li>
-              <li><a href="#20-children-and-age-restrictions">Children and Age Restrictions</a></li>
-              <li><a href="#21-third-party-services-and-linked-accounts">Third-Party Services and Linked Accounts</a></li>
-              <li><a href="#22-changes-to-this-privacy-policy">Changes to This Privacy Policy</a></li>
-              <li><a href="#23-privacy-officer-and-contact">Privacy Officer and Contact</a></li>
+              <li><a href="#19-children-and-age-restrictions">Children and Age Restrictions</a></li>
+              <li><a href="#20-third-party-services-and-linked-accounts">Third-Party Services and Linked Accounts</a></li>
+              <li><a href="#21-changes-to-this-privacy-policy">Changes to This Privacy Policy</a></li>
+              <li><a href="#22-contact">Contact</a></li>
             </ol>
           </nav>
           <hr className="my-4" />
@@ -97,7 +96,7 @@ const Privacy = () => {
             <li>preferences and settings.</li>
           </ul>
           <p>
-            Bento currently supports <strong>Sign in with Apple</strong> and <strong>email with one-time password (OTP)</strong> through Supabase Auth.
+            Bento currently supports authentication methods such as <strong>Sign in with Apple</strong> and <strong>email with one-time password (OTP)</strong> through third-party authentication providers.
           </p>
 
           <h3>B. Financial Information</h3>
@@ -110,6 +109,7 @@ const Privacy = () => {
             <li>category and tag information;</li>
             <li>budget information;</li>
             <li>recurring transaction or recurring spending details;</li>
+            <li>institution names, linked account connection status, sync metadata, and connection error information;</li>
             <li>related connection metadata.</li>
           </ul>
           <p>
@@ -153,7 +153,7 @@ const Privacy = () => {
             <li>app preferences.</li>
           </ul>
           <p>
-            This information is stored using iOS secure storage mechanisms such as Keychain and encrypted defaults and is removed when you sign out or delete the app.
+            This information is stored using iOS secure storage mechanisms and is generally removed when you sign out or delete the app, though some residual data may persist on-device depending on iOS behavior.
           </p>
 
           {/* Section 4 */}
@@ -196,54 +196,52 @@ const Privacy = () => {
           {/* Section 6 */}
           <h2 id="6-legal-basis-for-processing">6. Legal Basis for Processing</h2>
           <p>We process personal information on the following legal bases:</p>
-          <div className="overflow-x-auto">
-            <table>
-              <thead>
-                <tr>
-                  <th>Processing activity</th>
-                  <th>Legal basis</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Creating and managing your account</td>
-                  <td><strong>Contractual necessity</strong> — required to provide the Services you signed up for</td>
-                </tr>
-                <tr>
-                  <td>Connecting and syncing financial accounts via Plaid</td>
-                  <td><strong>Consent</strong> — you authorize each connection through Plaid's consent flow</td>
-                </tr>
-                <tr>
-                  <td>Providing Benii and AI features</td>
-                  <td><strong>Consent</strong> — you choose to use AI features and submit prompts</td>
-                </tr>
-                <tr>
-                  <td>Displaying transactions, balances, and budgets</td>
-                  <td><strong>Contractual necessity</strong> — core functionality of the Services</td>
-                </tr>
-                <tr>
-                  <td>Product analytics (Mixpanel)</td>
-                  <td><strong>Legitimate interest</strong> — understanding product usage to improve the Services</td>
-                </tr>
-                <tr>
-                  <td>Error monitoring and crash reporting (Sentry)</td>
-                  <td><strong>Legitimate interest</strong> — maintaining service stability and debugging</td>
-                </tr>
-                <tr>
-                  <td>Security, fraud prevention, and abuse detection</td>
-                  <td><strong>Legitimate interest</strong> — protecting users and the integrity of the Services</td>
-                </tr>
-                <tr>
-                  <td>Responding to support requests</td>
-                  <td><strong>Contractual necessity</strong> — fulfilling our obligations to you</td>
-                </tr>
-                <tr>
-                  <td>Complying with legal obligations</td>
-                  <td><strong>Legal obligation</strong> — required by applicable law</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Processing activity</th>
+                <th>Legal basis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Creating and managing your account</td>
+                <td><strong>Contractual necessity</strong> — required to provide the Services you signed up for</td>
+              </tr>
+              <tr>
+                <td>Connecting and syncing financial accounts via Plaid</td>
+                <td><strong>Consent</strong> — you authorize each connection through Plaid's consent flow</td>
+              </tr>
+              <tr>
+                <td>Providing Benii and AI features</td>
+                <td><strong>Consent</strong> — you choose to use AI features and submit prompts</td>
+              </tr>
+              <tr>
+                <td>Displaying transactions, balances, and budgets</td>
+                <td><strong>Contractual necessity</strong> — core functionality of the Services</td>
+              </tr>
+              <tr>
+                <td>Product analytics</td>
+                <td><strong>Legitimate interest</strong> — understanding product usage to improve the Services</td>
+              </tr>
+              <tr>
+                <td>Error monitoring and crash reporting</td>
+                <td><strong>Legitimate interest</strong> — maintaining service stability and debugging</td>
+              </tr>
+              <tr>
+                <td>Security, fraud prevention, and abuse detection</td>
+                <td><strong>Legitimate interest</strong> — protecting users and the integrity of the Services</td>
+              </tr>
+              <tr>
+                <td>Responding to support requests</td>
+                <td><strong>Contractual necessity</strong> — fulfilling our obligations to you</td>
+              </tr>
+              <tr>
+                <td>Complying with legal obligations</td>
+                <td><strong>Legal obligation</strong> — required by applicable law</td>
+              </tr>
+            </tbody>
+          </table>
           <p>
             Where we rely on consent, you may withdraw it at any time by contacting us at <strong>contact@aziolabs.com</strong> or by deleting your account. Withdrawal of consent does not affect the lawfulness of processing carried out before withdrawal.
           </p>
@@ -298,7 +296,7 @@ const Privacy = () => {
           {/* Section 8 */}
           <h2 id="8-benii-and-ai-features">8. Benii and AI Features</h2>
           <p>
-            Bento includes AI-powered features, including the assistant currently branded as <strong>Benii</strong>. If you choose to use those features, your prompts, conversation history, and certain limited financial information relevant to your request may be processed by our AI service provider(s), including OpenAI.
+            Bento includes AI-powered features, including the assistant currently branded as <strong>Benii</strong>. If you choose to use those features, your prompts, conversation history, and certain limited financial information relevant to your request may be processed by our AI service provider(s).
           </p>
           <p>To support AI responses, Bento may send:</p>
           <ul>
@@ -307,12 +305,12 @@ const Privacy = () => {
             <li>a system prompt;</li>
             <li>limited tool results generated from Bento's database, which may include transactions, balances, merchant names, categories, tags, budgets, recurring spending information, internal identifiers, and related internal query information.</li>
           </ul>
-          <p>Our AI provider may cache certain technical data, such as system prompts, for performance purposes.</p>
+          <p>Our AI provider may cache certain technical data for performance purposes.</p>
           <p>
-            We apply controls intended to limit the amount of information used for AI responses, including limiting tool results, stripping certain metadata, restricting AI database access to read-only queries, blocking dangerous query patterns, and screening user input with moderation tools.
+            We apply controls designed to limit the amount of information used for AI responses and to reduce the risk of misuse, including limiting tool results, restricting the scope of AI-driven database access, and screening user input.
           </p>
           <p>
-            Under OpenAI's current API data usage terms, API inputs and outputs are not used to train its models by default, and abuse monitoring logs are retained for up to 30 days unless legally required to retain them for longer. These terms may change over time; we encourage you to review OpenAI's current policies.
+            Under our current AI provider's API data usage terms, API inputs and outputs are not used to train its models by default. Abuse monitoring logs may be retained for a limited period as described in the provider's policies. These terms may change over time; we encourage you to review our AI provider's current policies.
           </p>
           <p>
             AI-generated content may be inaccurate, incomplete, or inappropriate in some circumstances. Benii and Bento's AI features are intended to assist users and do not constitute financial, legal, tax, accounting, or investment advice.
@@ -321,7 +319,7 @@ const Privacy = () => {
           {/* Section 9 */}
           <h2 id="9-how-we-disclose-information">9. How We Disclose Information</h2>
           <p>
-            We do <strong>not</strong> sell your financial data. We do <strong>not</strong> currently use your financial data for targeted advertising.
+            We do <strong>not</strong> sell your personal information, including your financial data. We do <strong>not</strong> currently use your financial data for targeted advertising.
           </p>
           <p>We may disclose personal information to the following categories of recipients:</p>
 
@@ -348,7 +346,21 @@ const Privacy = () => {
             <li><strong>Fly.io</strong> — application hosting and infrastructure</li>
             <li><strong>Apple App Store</strong> — in-app purchases and subscriptions</li>
           </ul>
-          <p>If we make material changes to our service providers, we will update this Privacy Policy accordingly.</p>
+          <p>
+            We seek to ensure that service providers that process personal information on our behalf are subject to terms that restrict how they may use, retain, and disclose that information. These restrictions are intended to include, as applicable:
+          </p>
+          <ul>
+            <li>processing personal information <strong>only</strong> for the purposes of performing services on our behalf and as permitted by applicable law;</li>
+            <li><strong>not selling, sharing, or using</strong> personal information for their own commercial purposes, including advertising or profiling unrelated to the services they provide to us;</li>
+            <li>implementing reasonable security measures to protect personal information; and</li>
+            <li>deleting or returning personal information upon termination of the service relationship, subject to legal retention requirements.</li>
+          </ul>
+          <p>
+            For purposes of the California Consumer Privacy Act (CCPA/CPRA), we treat disclosures to our service providers as made under service provider relationships as contemplated by the CCPA, and not as "sales" or "shares" of personal information.
+          </p>
+          <p>
+            This list is current as of the date above and may not be exhaustive at all times. If we make material changes to our service providers, we will update this Privacy Policy accordingly.
+          </p>
 
           <h3>B. At Your Direction or With Your Authorization</h3>
           <p>
@@ -376,28 +388,23 @@ const Privacy = () => {
           {/* Section 10 */}
           <h2 id="10-advertising-analytics-and-tracking">10. Advertising, Analytics, and Tracking</h2>
           <p>
-            Bento currently uses <strong>Mixpanel</strong> for product analytics and <strong>Sentry</strong> for error monitoring and crash reporting, both on the server and within the iOS client.
+            Bento uses third-party services for product analytics and error monitoring, both on the server and within the iOS client. Current providers are identified in <a href="#9-how-we-disclose-information">Section 9A (Service Providers)</a>.
           </p>
           <p>At the time of publication:</p>
           <ul>
-            <li>Bento uses <strong>server-side and client-side product analytics</strong> through Mixpanel for product usage and funnel events;</li>
-            <li>Bento uses <strong>server-side and client-side error monitoring and crash reporting</strong> through Sentry;</li>
+            <li>Bento uses server-side and client-side product analytics for product usage and funnel events;</li>
+            <li>Bento uses server-side and client-side error monitoring and crash reporting;</li>
             <li>Bento does <strong>not</strong> currently use cookie-based web analytics for a public web product experience;</li>
             <li>Bento does <strong>not</strong> currently use session replay tools;</li>
-            <li>the iOS client does <strong>not</strong> include Firebase, AppsFlyer, Adjust, or other attribution/tracking SDKs.</li>
+            <li>the iOS client does <strong>not</strong> currently include third-party attribution or advertising tracking SDKs.</li>
           </ul>
           <p>
-            We may use additional analytics, advertising measurement, and tracking technologies in the future, including advertising pixels such as <strong>Meta Pixel</strong>, to measure app and website performance, track actions, and support audience building. If we enable such technologies, we may update this Privacy Policy to describe those practices and, where required, provide applicable choices or disclosures.
+            We may use additional analytics, advertising measurement, and tracking technologies in the future. If we enable such technologies, we will update this Privacy Policy to describe those practices and, where required, provide applicable choices or disclosures.
           </p>
 
           <h3>Do Not Track Signals</h3>
           <p>
             Bento does not currently respond to "Do Not Track" (DNT) browser signals, as there is no industry-accepted standard for how to respond to such signals in a mobile application context.
-          </p>
-
-          <h3>California "Shine the Light"</h3>
-          <p>
-            We do not share personal information with third parties for their own direct marketing purposes.
           </p>
 
           {/* Section 11 */}
@@ -409,7 +416,7 @@ const Privacy = () => {
             Where personal information is processed in another jurisdiction, it may be subject to the laws of that jurisdiction and may be accessible to courts, law enforcement, regulators, or government authorities in accordance with applicable law.
           </p>
           <p>
-            Bento's data storage and processing are currently U.S.-based, including application hosting in Seattle, Washington (Fly.io) and database hosting in Northern California (Supabase, us-west-1).
+            Bento's data storage and processing are currently U.S.-based. Specific hosting regions may change from time to time as we update our infrastructure.
           </p>
 
           {/* Section 12 */}
@@ -417,27 +424,28 @@ const Privacy = () => {
           <p>
             We retain personal information for as long as reasonably necessary to provide the Services, fulfill the purposes described in this Privacy Policy, comply with legal obligations, resolve disputes, enforce agreements, and protect the security and integrity of Bento.
           </p>
-          <p>Current retention periods include:</p>
+          <p>As a general guide, approximate retention periods include:</p>
           <ul>
             <li><strong>Account and profile data:</strong> until account deletion</li>
             <li><strong>Financial data (including transactions, accounts, balances):</strong> until account deletion</li>
             <li><strong>Chat history:</strong> up to approximately 1 year, then automatically deleted</li>
-            <li><strong>Soft-deleted transactions:</strong> 90 days, then permanently purged</li>
-            <li><strong>Connection attempts:</strong> 90 days</li>
-            <li><strong>Application logs (Fly.io):</strong> approximately 30 days</li>
-            <li><strong>Error tracking data (Sentry):</strong> approximately 90 days</li>
-            <li><strong>Analytics data (Mixpanel):</strong> approximately 2 years</li>
-            <li><strong>Supabase backups:</strong> approximately 7 to 30 days, depending on plan and backup configuration</li>
+            <li><strong>Soft-deleted transactions:</strong> approximately 90 days, then permanently purged</li>
+            <li><strong>Connection attempts:</strong> approximately 90 days</li>
+            <li><strong>Application logs:</strong> approximately 30 days</li>
+            <li><strong>Error tracking data:</strong> approximately 90 days</li>
+            <li><strong>Analytics data:</strong> approximately 2 years</li>
+            <li><strong>Backups:</strong> approximately 7 to 30 days, depending on configuration</li>
             <li><strong>Residual vendor logs or backups after account deletion:</strong> typically up to 30 to 90 days through routine rotation</li>
           </ul>
+          <p>These periods are approximate and may vary based on operational, legal, or technical requirements.</p>
           <p>
-            When a user deletes their account, Bento hard-deletes primary user data from its main database and revokes linked Plaid access tokens. Residual copies may remain temporarily in backups or vendor logs until they are overwritten or rotated out in the ordinary course.
+            When a user deletes their account, Bento deletes primary user data from its production database and revokes linked financial account access tokens. Residual copies may remain temporarily in backups or vendor logs until they are overwritten or rotated out in the ordinary course.
           </p>
 
           {/* Section 13 */}
           <h2 id="13-account-deletion">13. Account Deletion</h2>
           <p>
-            If you delete your Bento account, we will permanently delete your primary account data from our production database, revoke Plaid access tokens, and delete the related authenticated user account.
+            If you delete your Bento account, we will delete your primary account data from our production database, revoke linked financial account access tokens, and delete the related authenticated user account.
           </p>
           <p>Certain information may remain temporarily in:</p>
           <ul>
@@ -451,20 +459,19 @@ const Privacy = () => {
           {/* Section 14 */}
           <h2 id="14-data-security">14. Data Security</h2>
           <p>
-            We use administrative, technical, and organizational safeguards designed to protect personal information against unauthorized access, use, disclosure, alteration, and destruction.
+            We seek to protect your personal information from unauthorized access, use, disclosure, alteration, and destruction using appropriate administrative, technical, and organizational safeguards based on the type of data and how we process it.
           </p>
-          <p>Current security measures include:</p>
+          <p>Depending on the nature of the data and the processing involved, these safeguards may include:</p>
           <ul>
             <li>encryption in transit using HTTPS;</li>
-            <li>encryption of Plaid access tokens at rest using AES-256-GCM before database storage;</li>
-            <li>webhook signature verification for Plaid webhooks;</li>
+            <li>encryption of sensitive credentials at rest before database storage;</li>
             <li>per-user data isolation enforced through authenticated user identifiers;</li>
-            <li>input sanitization and controls intended to prevent unsafe query execution;</li>
-            <li>read-only restrictions on AI-driven database access;</li>
+            <li>input sanitization and controls designed to prevent unsafe query execution;</li>
+            <li>restrictions designed to limit AI-driven database access to read-only queries;</li>
             <li>moderation and safety screening of user input.</li>
           </ul>
           <p>
-            No method of transmission over the internet or method of electronic storage is completely secure. As a result, we cannot guarantee absolute security.
+            Although we work to protect the security of your account and other data that we hold, no method of transmission over the internet or method of electronic storage is completely secure. As a result, we cannot guarantee absolute security.
           </p>
 
           {/* Section 15 */}
@@ -485,6 +492,7 @@ const Privacy = () => {
             <li>service maintenance and improvement;</li>
             <li>fraud prevention and security review.</li>
           </ul>
+          <p>We may log or audit internal access to user data for security, support, and accountability purposes.</p>
           <p>
             Bento does not currently support shared or delegated access between users. Each Bento account is intended for the use of a single individual.
           </p>
@@ -572,14 +580,10 @@ const Privacy = () => {
           <p>
             You may submit a request by contacting us at <strong>contact@aziolabs.com</strong>. We will verify your identity before processing your request, which may require you to confirm information associated with your account. You may also designate an authorized agent to make a request on your behalf by providing written authorization to us at the same email address.
           </p>
-          <p>
-            We will respond to verifiable requests within 45 days, or notify you if we need an extension of up to an additional 45 days.
-          </p>
+          <p>We will respond to verifiable requests within 45 days, or notify you if we need an extension of up to an additional 45 days.</p>
 
           <h3>Financial Incentives</h3>
-          <p>
-            We do not offer financial incentives or price differences in exchange for the collection, sale, or deletion of personal information.
-          </p>
+          <p>We do not offer financial incentives or price differences in exchange for the collection, sale, or deletion of personal information.</p>
 
           <h3>Retention</h3>
           <p>
@@ -587,39 +591,7 @@ const Privacy = () => {
           </p>
 
           {/* Section 19 */}
-          <h2 id="19-additional-rights-for-quebec-residents">19. Additional Rights for Quebec Residents</h2>
-          <p>
-            If you reside in Quebec, Canada, Quebec's <em>Act respecting the protection of personal information in the private sector</em> (commonly referred to as "<strong>Law 25</strong>" or "<strong>Quebec Privacy Law</strong>") provides you with additional rights.
-          </p>
-
-          <h3>Consent</h3>
-          <p>
-            Financial data is considered sensitive personal information under Quebec law. We obtain your express consent before collecting and processing your financial information through the Plaid account connection flow. You may withdraw your consent at any time by disconnecting your financial accounts or deleting your Bento account.
-          </p>
-
-          <h3>Your Rights Under Quebec Law</h3>
-          <p>As a Quebec resident, you have the right to:</p>
-          <ul>
-            <li><strong>Access</strong> — request access to the personal information we hold about you;</li>
-            <li><strong>Correction</strong> — request that we correct inaccurate or incomplete personal information;</li>
-            <li><strong>Deletion</strong> — request deletion of your personal information where it is no longer necessary for the purposes for which it was collected;</li>
-            <li><strong>Data portability</strong> — request that we provide your personal information in a structured, commonly used technological format, or transfer it to another organization where technically feasible;</li>
-            <li><strong>Withdrawal of consent</strong> — withdraw your consent to the processing of your personal information at any time;</li>
-            <li><strong>De-indexation</strong> — request that we cease disseminating your personal information or that any link to your information be de-indexed, where applicable.</li>
-          </ul>
-
-          <h3>How to Submit a Request</h3>
-          <p>
-            You may exercise your rights by contacting us at <strong>contact@aziolabs.com</strong>. We will respond within 30 days.
-          </p>
-
-          <h3>Complaints</h3>
-          <p>
-            If you are not satisfied with our response, you may file a complaint with the <strong>Commission d'acc&egrave;s &agrave; l'information du Qu&eacute;bec</strong> (CAI) at <a href="https://www.cai.gouv.qc.ca" target="_blank" rel="noopener noreferrer">www.cai.gouv.qc.ca</a>.
-          </p>
-
-          {/* Section 20 */}
-          <h2 id="20-children-and-age-restrictions">20. Children and Age Restrictions</h2>
+          <h2 id="19-children-and-age-restrictions">19. Children and Age Restrictions</h2>
           <p>
             Bento is intended only for individuals who are <strong>18 years of age or older</strong>. We do not knowingly collect personal information from individuals under 18. If we learn that we have collected personal information from an individual under 18, we will take steps designed to delete that information.
           </p>
@@ -627,8 +599,8 @@ const Privacy = () => {
             If you believe that an individual under 18 may have provided us personal information, please contact us at <strong>contact@aziolabs.com</strong>.
           </p>
 
-          {/* Section 21 */}
-          <h2 id="21-third-party-services-and-linked-accounts">21. Third-Party Services and Linked Accounts</h2>
+          {/* Section 20 */}
+          <h2 id="20-third-party-services-and-linked-accounts">20. Third-Party Services and Linked Accounts</h2>
           <p>
             Bento relies on third-party providers to connect financial accounts, power subscriptions, support AI functionality, and operate core infrastructure.
           </p>
@@ -639,8 +611,8 @@ const Privacy = () => {
             Your use of third-party financial account connections and third-party services may also be subject to those providers' own privacy policies and terms. We encourage you to review those policies, including the policies of providers such as Plaid and Apple.
           </p>
 
-          {/* Section 22 */}
-          <h2 id="22-changes-to-this-privacy-policy">22. Changes to This Privacy Policy</h2>
+          {/* Section 21 */}
+          <h2 id="21-changes-to-this-privacy-policy">21. Changes to This Privacy Policy</h2>
           <p>
             We may update this Privacy Policy from time to time to reflect changes in our Services, practices, vendors, legal obligations, or product features.
           </p>
@@ -651,13 +623,13 @@ const Privacy = () => {
             Your continued use of the Services after an updated Privacy Policy becomes effective means you acknowledge the updated Privacy Policy.
           </p>
 
-          {/* Section 23 */}
-          <h2 id="23-privacy-officer-and-contact">23. Privacy Officer and Contact</h2>
+          {/* Section 22 */}
+          <h2 id="22-contact">22. Contact</h2>
           <p>
-            Azio Labs has designated a privacy officer responsible for overseeing compliance with this Privacy Policy and applicable privacy laws.
+            Azio Labs Inc. is responsible for personal information under its control. Privacy inquiries may be directed to our privacy contact at <strong>contact@aziolabs.com</strong>.
           </p>
           <p>
-            If you have questions, concerns, or requests relating to this Privacy Policy or your personal information, you can contact our privacy officer at:
+            If you have questions, concerns, or requests relating to this Privacy Policy or your personal information, you can also reach us at:
           </p>
           <address className="not-italic">
             <strong>Azio Labs Inc.</strong><br />
