@@ -351,7 +351,7 @@ const Terms = () => {
 
           <h3>A. Informal Resolution</h3>
           <p>
-            Before initiating any formal dispute resolution proceeding, you and Azio Labs each agree to first attempt to resolve any dispute, claim, or controversy arising out of or relating to these Terms or the Services informally. The party raising the dispute must send the other party a written notice describing the nature of the dispute, the relief sought, and the contact information of the complaining party (a "<strong>Dispute Notice</strong>"). Dispute Notices to Azio Labs should be sent to <strong>contact@aziolabs.com</strong>. Dispute Notices to you will be sent to the email address associated with your account.
+            Before initiating any formal dispute resolution proceeding, you and Azio Labs each agree to first attempt to resolve any dispute, claim, or controversy arising out of or relating to these Terms or the Services informally. The party raising the dispute must send the other party a written notice describing the nature of the dispute, the relief sought, and the contact information of the complaining party (a "<strong>Dispute Notice</strong>"). Dispute Notices to Azio Labs should be sent to <strong>bento@aziolabs.com</strong>. Dispute Notices to you will be sent to the email address associated with your account.
           </p>
           <p>
             Both parties agree to negotiate in good faith for at least <strong>30 days</strong> after the Dispute Notice is received. If the dispute is not resolved within this 30-day period, either party may proceed to binding arbitration as described below.
@@ -391,7 +391,7 @@ const Terms = () => {
 
           <h3>F. Opt-Out</h3>
           <p>
-            You may opt out of the arbitration, jury trial waiver, and class action waiver provisions in this Section 21 by sending written notice to <strong>contact@aziolabs.com</strong> within <strong>30 days</strong> of first accepting these Terms. Your notice must include your name, email address associated with your Bento account, and a clear statement that you wish to opt out of arbitration. If you opt out, disputes will be resolved in court as described in Section 23.
+            You may opt out of the arbitration, jury trial waiver, and class action waiver provisions in this Section 21 by sending written notice to <strong>bento@aziolabs.com</strong> within <strong>30 days</strong> of first accepting these Terms. Your notice must include your name, email address associated with your Bento account, and a clear statement that you wish to opt out of arbitration. If you opt out, disputes will be resolved in court as described in Section 23.
           </p>
 
           {/* Section 22 */}
@@ -444,7 +444,7 @@ const Terms = () => {
             1 Hycrest Ave, PH1<br />
             Toronto, Ontario, Canada<br />
             M2N 6V8<br />
-            Email: <strong>contact@aziolabs.com</strong>
+            Email: <strong>bento@aziolabs.com</strong>
           </address>
         </article>
       </main>

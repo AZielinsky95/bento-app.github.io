@@ -75,7 +75,7 @@ const Privacy = () => {
             1 Hycrest Ave, PH1<br />
             Toronto, Ontario, Canada<br />
             M2N 6V8<br />
-            Email: <strong>contact@aziolabs.com</strong>
+            Email: <strong>bento@aziolabs.com</strong>
           </address>
 
           {/* Section 3 */}
@@ -243,7 +243,7 @@ const Privacy = () => {
             </tbody>
           </table>
           <p>
-            Where we rely on consent, you may withdraw it at any time by contacting us at <strong>contact@aziolabs.com</strong> or by deleting your account. Withdrawal of consent does not affect the lawfulness of processing carried out before withdrawal.
+            Where we rely on consent, you may withdraw it at any time by contacting us at <strong>bento@aziolabs.com</strong> or by deleting your account. Withdrawal of consent does not affect the lawfulness of processing carried out before withdrawal.
           </p>
           <p>
             Where we rely on legitimate interest, we have assessed that our interests do not override your privacy rights, taking into account the nature of the data, the purpose of processing, and the safeguards in place.
@@ -508,12 +508,12 @@ const Privacy = () => {
 
           <h3>A. Account and Data Deletion</h3>
           <p>
-            You may delete your account through Bento. You may also contact us at <strong>contact@aziolabs.com</strong> regarding deletion requests.
+            You may delete your account through Bento. You may also contact us at <strong>bento@aziolabs.com</strong> regarding deletion requests.
           </p>
 
           <h3>B. Access Requests</h3>
           <p>
-            You may request access to your personal information by contacting us at <strong>contact@aziolabs.com</strong>. We will respond within 30 days or within the timeframe required by applicable law.
+            You may request access to your personal information by contacting us at <strong>bento@aziolabs.com</strong>. We will respond within 30 days or within the timeframe required by applicable law.
           </p>
           <p>Bento does not currently offer a self-serve data export tool.</p>
 
@@ -524,7 +524,7 @@ const Privacy = () => {
 
           <h3>D. Withdrawal of Consent</h3>
           <p>
-            Where processing is based on your consent, you may withdraw consent at any time by contacting us at <strong>contact@aziolabs.com</strong> or by deleting your account. Withdrawal of consent does not affect the lawfulness of processing carried out before withdrawal.
+            Where processing is based on your consent, you may withdraw consent at any time by contacting us at <strong>bento@aziolabs.com</strong> or by deleting your account. Withdrawal of consent does not affect the lawfulness of processing carried out before withdrawal.
           </p>
 
           <h3>E. Additional Rights Depending on Jurisdiction</h3>
@@ -578,7 +578,7 @@ const Privacy = () => {
 
           <h3>How to Submit a Request</h3>
           <p>
-            You may submit a request by contacting us at <strong>contact@aziolabs.com</strong>. We will verify your identity before processing your request, which may require you to confirm information associated with your account. You may also designate an authorized agent to make a request on your behalf by providing written authorization to us at the same email address.
+            You may submit a request by contacting us at <strong>bento@aziolabs.com</strong>. We will verify your identity before processing your request, which may require you to confirm information associated with your account. You may also designate an authorized agent to make a request on your behalf by providing written authorization to us at the same email address.
           </p>
           <p>We will respond to verifiable requests within 45 days, or notify you if we need an extension of up to an additional 45 days.</p>
 
@@ -596,7 +596,7 @@ const Privacy = () => {
             Bento is intended only for individuals who are <strong>18 years of age or older</strong>. We do not knowingly collect personal information from individuals under 18. If we learn that we have collected personal information from an individual under 18, we will take steps designed to delete that information.
           </p>
           <p>
-            If you believe that an individual under 18 may have provided us personal information, please contact us at <strong>contact@aziolabs.com</strong>.
+            If you believe that an individual under 18 may have provided us personal information, please contact us at <strong>bento@aziolabs.com</strong>.
           </p>
 
           {/* Section 20 */}
@@ -626,7 +626,7 @@ const Privacy = () => {
           {/* Section 22 */}
           <h2 id="22-contact">22. Contact</h2>
           <p>
-            Azio Labs Inc. is responsible for personal information under its control. Privacy inquiries may be directed to our privacy contact at <strong>contact@aziolabs.com</strong>.
+            Azio Labs Inc. is responsible for personal information under its control. Privacy inquiries may be directed to our privacy contact at <strong>bento@aziolabs.com</strong>.
           </p>
           <p>
             If you have questions, concerns, or requests relating to this Privacy Policy or your personal information, you can also reach us at:
@@ -636,7 +636,7 @@ const Privacy = () => {
             1 Hycrest Ave, PH1<br />
             Toronto, Ontario, Canada<br />
             M2N 6V8<br />
-            Email: <strong>contact@aziolabs.com</strong>
+            Email: <strong>bento@aziolabs.com</strong>
           </address>
         </article>
       </main>
