@@ -8,14 +8,14 @@ const Privacy = () => {
         <article className="prose prose-sm prose-gray max-w-none prose-headings:text-gray-900 prose-headings:mt-3 prose-headings:mb-1 prose-h2:mt-5 prose-h3:mt-3 prose-p:text-gray-700 prose-p:my-1 prose-li:text-gray-700 prose-li:my-0 prose-ul:my-1 prose-strong:text-gray-900 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:text-left prose-th:font-semibold prose-th:text-gray-900 prose-td:text-gray-700">
           <h1 className="text-3xl font-bold mb-1">Privacy Policy</h1>
           <p className="text-gray-500 text-sm mb-6">
-            <strong>Effective Date:</strong> May 2, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> May 2, 2026
+            <strong>Effective Date:</strong> October 8, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> October 8, 2026
           </p>
 
           <p>
             Bento is a product of <strong>Azio Labs Inc.</strong> ("<strong>Azio Labs</strong>," "<strong>Bento</strong>," "<strong>we</strong>," "<strong>our</strong>," or "<strong>us</strong>"). This Privacy Policy explains how we collect, use, disclose, store, and otherwise process personal information when you use the Bento mobile application, <strong>Benii</strong> (Bento's AI assistant), related services, and any features or content we make available through them (collectively, the "<strong>Services</strong>").
           </p>
           <p>
-            By creating an account, connecting financial accounts, using Benii or other AI features, or otherwise using the Services, you consent to the collection, use, and disclosure of your personal information as described in this Privacy Policy. Where we rely on your consent, you may withdraw it at any time by contacting us or deleting your account, though this may affect your ability to use certain features of the Services.
+            This Privacy Policy explains our data practices. It does not replace feature-specific disclosures or permissions required by applicable law. Where we rely on your consent, you may withdraw it at any time by contacting us or deleting your account, though this may affect your ability to use certain features of the Services.
           </p>
 
           {/* Table of Contents */}
@@ -100,7 +100,7 @@ const Privacy = () => {
           </p>
 
           <h3>B. Financial Information</h3>
-          <p>If you choose to connect financial accounts through Bento, we may collect or receive:</p>
+          <p>If you connect financial accounts, create manual accounts, enter transactions, or import statements through Bento, we may collect or receive:</p>
           <ul>
             <li>account names and account types;</li>
             <li>balances and holdings information;</li>
@@ -115,6 +115,8 @@ const Privacy = () => {
           <p>
             Bento is a <strong>read-only</strong> finance application. Users cannot send, receive, or transfer money through the Services.
           </p>
+
+          <p>When you import a PDF statement or CSV transaction export, we receive the entire file and information it contains. Depending on the file, this may include your name, mailing address, account or card numbers, balances, transaction dates, amounts, merchant or payee descriptions, and other statement details. Section 8 explains how imported information is processed using AI.</p>
 
           <h3>C. Benii and AI-Related Information</h3>
           <p>If you use Benii or other AI features, we may collect and process:</p>
@@ -165,6 +167,7 @@ const Privacy = () => {
           <ul>
             <li>create an account;</li>
             <li>use Bento;</li>
+            <li>upload PDF statements or CSV transaction exports;</li>
             <li>contact support;</li>
             <li>communicate with us;</li>
             <li>ask questions using Benii or other AI features.</li>
@@ -214,7 +217,7 @@ const Privacy = () => {
               </tr>
               <tr>
                 <td>Providing Benii and AI features</td>
-                <td><strong>Consent</strong> — you choose to use AI features and submit prompts</td>
+                <td><strong>Consent</strong>, where required, for processing prompts and imported statement information using AI</td>
               </tr>
               <tr>
                 <td>Displaying transactions, balances, and budgets</td>
@@ -265,6 +268,7 @@ const Privacy = () => {
           <h3>B. To Provide Benii and Other AI Features</h3>
           <ul>
             <li>respond to user questions and prompts;</li>
+            <li>extract transactions from imported statements, check statement totals, and organize transaction descriptions and categories;</li>
             <li>generate summaries, explanations, and insights based on user data;</li>
             <li>retrieve and use limited financial data needed to answer a question;</li>
             <li>monitor, improve, debug, and support our AI functionality.</li>
@@ -296,21 +300,29 @@ const Privacy = () => {
           {/* Section 8 */}
           <h2 id="8-benii-and-ai-features">8. Benii and AI Features</h2>
           <p>
-            Bento includes AI-powered features, including the assistant currently branded as <strong>Benii</strong>. If you choose to use those features, your prompts, conversation history, and certain limited financial information relevant to your request may be processed by our AI service provider(s).
+            Bento uses OpenAI for Benii and for server-side statement import processing. The information sent depends on the feature, as described below.
           </p>
-          <p>To support AI responses, Bento may send:</p>
+          <h3>A. Benii conversations</h3>
+          <p>To support Benii responses, Bento may send:</p>
           <ul>
             <li>the raw user prompt;</li>
             <li>conversation history;</li>
             <li>a system prompt;</li>
             <li>limited tool results generated from Bento's database, which may include transactions, balances, merchant names, categories, tags, budgets, recurring spending information, internal identifiers, and related internal query information.</li>
           </ul>
+          <h3 id="statement-imports">B. PDF and CSV statement imports</h3>
+          <p>Import processing takes place on Bento's servers, not solely on your device. The complete PDF or CSV file is uploaded to our server infrastructure, hosted by Fly.io.</p>
+          <p>For PDFs, Bento extracts text from statement pages and sends that text to OpenAI to identify transactions, organize categories, and check statement balances and totals. OpenAI receives extracted text rather than the original PDF attachment. Text sent to OpenAI may include names, addresses, account or card numbers, transaction details, and balances appearing on those pages; it is not guaranteed to be anonymized or redacted.</p>
+          <p>For CSVs, Bento reads the file on its servers and sends selected transaction descriptions, whether money is coming in or going out, and category options to OpenAI for merchant identification and categorization. We do not send the complete CSV file to OpenAI for this step or include amounts and dates as separate fields in that request. Descriptions themselves may contain personal information or other financial details.</p>
+          <p>Extracted draft transactions are stored in our database hosted by Supabase so you can review them. Upload and AI processing occur before that review; reviewing transactions is not a preview of information that has stayed on your device. Transactions are added to your ledger after you confirm them. You can choose not to use file import; creating a manual account does not itself keep uploaded statements on-device.</p>
+
+          <h3>C. AI provider data handling</h3>
           <p>Our AI provider may cache certain technical data for performance purposes.</p>
           <p>
             We apply controls designed to limit the amount of information used for AI responses and to reduce the risk of misuse, including limiting tool results, restricting the scope of AI-driven database access, and screening user input.
           </p>
           <p>
-            Under our current AI provider's API data usage terms, API inputs and outputs are not used to train its models by default. Abuse monitoring logs may be retained for a limited period as described in the provider's policies. These terms may change over time; we encourage you to review our AI provider's current policies.
+            Under OpenAI's API data usage terms, API inputs and outputs are not used to train its models by default unless data sharing is explicitly enabled. Our statement-import requests disable response storage, but this does not guarantee zero retention: OpenAI may retain abuse-monitoring logs, generally for up to 30 days, with exceptions under its policies, and may temporarily cache data for performance. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI's API data controls</a> for current retention details and exceptions.
           </p>
           <p>
             AI-generated content may be inaccurate, incomplete, or inappropriate in some circumstances. Benii and Bento's AI features are intended to assist users and do not constitute financial, legal, tax, accounting, or investment advice.
@@ -339,11 +351,11 @@ const Privacy = () => {
           <p>Bento currently uses the following service providers:</p>
           <ul>
             <li><strong>Plaid</strong> — financial account connection and transaction data</li>
-            <li><strong>Supabase</strong> — database hosting and user authentication</li>
-            <li><strong>OpenAI</strong> — AI processing for Benii</li>
+            <li><strong>Supabase</strong> — database hosting, including extracted import drafts and saved transactions, and user authentication</li>
+            <li><strong>OpenAI</strong> — AI processing for Benii and PDF/CSV statement imports</li>
             <li><strong>Mixpanel</strong> — product analytics (server-side and client-side)</li>
             <li><strong>Sentry</strong> — error tracking and crash reporting (server-side and client-side)</li>
-            <li><strong>Fly.io</strong> — application hosting and infrastructure</li>
+            <li><strong>Fly.io</strong> — application hosting and infrastructure, including uploaded statement processing</li>
             <li><strong>Apple App Store</strong> — in-app purchases and subscriptions</li>
           </ul>
           <p>
@@ -428,6 +440,9 @@ const Privacy = () => {
           <ul>
             <li><strong>Account and profile data:</strong> until account deletion</li>
             <li><strong>Financial data (including transactions, accounts, balances):</strong> until account deletion</li>
+            <li><strong>Original uploaded statements:</strong> handled temporarily for import processing rather than retained as file attachments to your saved transactions</li>
+            <li><strong>Extracted import drafts and job results:</strong> stored before you confirm transactions; import jobs have an approximately two-hour expiry, after which expired records are removed by scheduled cleanup. Expiry is not a guarantee of physical deletion at exactly two hours; backups may persist under the periods below</li>
+            <li><strong>Statement information sent to OpenAI:</strong> subject to the provider retention practices described in Section 8, separately from Bento's import-job cleanup</li>
             <li><strong>Chat history:</strong> up to approximately 1 year, then automatically deleted</li>
             <li><strong>Soft-deleted transactions:</strong> approximately 90 days, then permanently purged</li>
             <li><strong>Connection attempts:</strong> approximately 90 days</li>
@@ -555,7 +570,7 @@ const Privacy = () => {
           <h3>Sensitive Personal Information</h3>
           <p>We collect the following categories of sensitive personal information as defined by the CPRA:</p>
           <ul>
-            <li><strong>Financial account information</strong> — account names, balances, transaction history, and related data collected through Plaid</li>
+            <li><strong>Financial account information</strong> — account names, balances, transaction history, account or card numbers, and related data collected through Plaid, manual entry, or statement imports</li>
           </ul>
           <p>
             We use sensitive personal information <strong>only</strong> to provide and improve the Services (displaying your financial data, powering Benii insights, and maintaining your account). We do <strong>not</strong> use sensitive personal information for profiling, advertising, or any purpose other than providing the Services. Because our use is limited to what is necessary to provide the Services you request, no "Limit Use of Sensitive Personal Information" opt-out is required.
